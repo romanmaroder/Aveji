@@ -9,15 +9,18 @@
     <title>Aveji</title>
 </head>
 <body>
-<div class="max-w-md px-4 pt-2 pb-5 mx-auto xl:max-w-3xl xl:max-w-[1440px] xl:px-8 xl:py-3">
+<div class="max-w-md px-4 pt-2 pb-5 mx-auto md:max-w-3xl xl:max-w-7xl xl:max-w-[1440px] xl:px-8 xl:py-3 shadow-md">
     <!--    header-->
     <header class="mb-5 xl:mb-10">
         <nav class="flex items-center justify-between xl:h-[108px]">
             <div class="xl:flex-2">
-                <picture class="">
-                    <source media="(min-width: 1440px)" srcset="public/img/desktop/logo.svg">
-                    <img src="public/img/mobile/logo.svg" alt="logo">
-                </picture>
+                <a href="">
+                    <picture class="">
+                        <source media="(min-width: 1440px)" srcset="public/img/desktop/logo.svg">
+                        <img src="public/img/mobile/logo.svg" alt="logo">
+                    </picture>
+                </a>
+
             </div>
             <div class="hidden xl:flex-1 xl:flex xl:items-start xl:justify-between">
                 <ul>
@@ -28,36 +31,38 @@
                 </ul>
                 <a class="header-tel" href="tel:+79999999999">+7 999 999 99 99</a>
             </div>
-            <div class="xl:hidden"><img src="public/img/mobile/burger.svg" alt="burger"></div>
+            <div class="xl:hidden cursor-pointer"><img src="public/img/mobile/burger.svg" alt="burger"></div>
         </nav>
     </header>
 
     <!--    Hero-->
     <section class="mb-12 xl:mb-3.5">
         <div class="xl:flex xl:flex-row xl:justify-between xl:items-end">
-            <div class="xl:basis-3xl">
+            <div class="md:max-w-2xl xl:basis-3xl">
                 <h1 class="font-helvetica text-h1-mobile leading-h1-mobile text-dark-custom uppercase pb-5 xl:text-h1-web xl:leading-h1-web xl:pb-10">
                     Эксклюзивная
                     и нестандартная мебель для дома
                 </h1>
-                <p class="font-roboto text-dark-custom pb-6 xl:text-xl xl:w-[445px]">Мы можем произвести любую мебель
+                <p class="font-roboto text-dark-custom pb-6 xl:text-xl md:w-[445px]">Мы можем произвести любую мебель
                     для вашего
                     проекта и найти
                     производственное решение любой задумки.</p>
             </div>
             <div class="xl:basis-auto">
-                <a class="font-roboto uppercase text-lg leading-[21px] underline underline-offset-4 decoration-(--color-dark-custom) inline-block pb-6.5 xl:relative xl:bottom-[116px]"
+                <a class="header-order-a-projects "
                    href="#">Заказать проект</a>
             </div>
         </div>
-        <div class="xl:flex xl:flex-row xl:justify-between">
+        <div class="md:flex md:flex-row md:justify-between ">
             <div class="xl:order-2 xl:relative xl:bottom-[116px]">
-                <picture>
+                <picture class="w-full">
                     <source media="(min-width: 1440px)" srcset="public/img/desktop/header.jpeg">
-                    <img class="" src="public/img/mobile/header.jpeg" alt="header">
+                    <source media="(min-width: 1280px)" srcset="public/img/desktop/header.jpeg">
+                    <source media="(min-width: 768px)" srcset="public/img/mobile/header.jpeg">
+                    <img class="w-full" src="public/img/mobile/header.jpeg" alt="header">
                 </picture>
             </div>
-            <div class="hidden xl:block  xl:order-1 xl:self-end xl:relative xl:bottom-[116px]">
+            <div class="hidden md:block xl:order-1 xl:self-end xl:relative xl:bottom-[116px]">
                 <img src="public/img/desktop/header_small.jpeg" alt="header_small">
             </div>
         </div>
@@ -200,7 +205,7 @@
             Проекты</h2>
         <!-- Slider -->
 
-        <div class="carousel carousel-center max-w-[359px] space-x-4 xl:hidden">
+        <div class="carousel carousel-center max-w-[359px] space-x-4 md:max-w-full xl:hidden">
             <div class="carousel-item relative group">
                 <img src="public/img/mobile/project.jpeg"
                      class="max-w-[252px] max-h-[328px]" alt="Tumbling for TV"/>
@@ -255,44 +260,44 @@
                 </p>
             </div>
         </div>
-        <div class="hidden xl:flex xl:flex-row xl:flex-wrap xl:items-center xl:gap-3">
+        <div class="hidden  xl:justify-between xl:flex xl:flex-row xl:flex-wrap xl:items-center xl:gap-3">
             <div class="relative group">
-                <img class="flex-1 max-w-[445px] max-h-[580px]" src="public/img/desktop/project.jpeg" alt="project">
+                <img class="max-w-sm 1xl:max-w-[445px] 1xl:max-h-[580px]" src="public/img/desktop/project.jpeg" alt="project">
                 <p class="h-[66px] carousel-description">
                     <span class="text-white leading-[140%]">Тумба под телевизор</span>
                     <span><img src="public/img/mobile/arrow.svg" alt="arrow"></span>
                 </p>
             </div>
             <div class="relative group">
-                <img class="flex-1 max-w-[445px] max-h-[580px]" src="public/img/desktop/project-1.jpeg" alt="project-1">
+                <img class="max-w-sm 1xl:max-w-[445px] 1xl:max-h-[580px]" src="public/img/desktop/project-1.jpeg" alt="project-1">
                 <p class="h-[66px] carousel-description">
                     <span class="text-white leading-[140%]">Тумба под телевизор</span>
                     <span><img src="public/img/mobile/arrow.svg" alt="arrow"></span>
                 </p>
             </div>
             <div class="relative group">
-                <img class="flex-1 max-w-[445px] max-h-[580px]" src="public/img/desktop/project-2.jpeg" alt="project-2">
+                <img class="max-w-sm 1xl:max-w-[445px] 1xl:max-h-[580px]" src="public/img/desktop/project-2.jpeg" alt="project-2">
                 <p class="h-[66px] carousel-description">
                     <span class="text-white leading-[140%]">Тумба под телевизор</span>
                     <span><img src="public/img/mobile/arrow.svg" alt="arrow"></span>
                 </p>
             </div>
             <div class="relative group">
-                <img class="flex-1 max-w-[445px] max-h-[580px]" src="public/img/desktop/project-3.jpeg" alt="project-3">
+                <img class="max-w-sm 1xl:max-w-[445px] 1xl:max-h-[580px]" src="public/img/desktop/project-3.jpeg" alt="project-3">
                 <p class="h-[66px] carousel-description">
                     <span class="text-white leading-[140%]">Тумба под телевизор</span>
                     <span><img src="public/img/mobile/arrow.svg" alt="arrow"></span>
                 </p>
             </div>
             <div class="relative group">
-                <img class="flex-1 max-w-[445px] max-h-[580px]" src="public/img/desktop/project-4.jpeg" alt="project-4">
+                <img class="max-w-sm 1xl:max-w-[445px] 1xl:max-h-[580px]" src="public/img/desktop/project-4.jpeg" alt="project-4">
                 <p class="h-[66px] carousel-description">
                     <span class="text-white leading-[140%]">Тумба под телевизор</span>
                     <span><img src="public/img/mobile/arrow.svg" alt="arrow"></span>
                 </p>
             </div>
             <div class="relative group">
-                <img class="flex-1 max-w-[445px] max-h-[580px]" src="public/img/desktop/project-5.jpeg" alt="project-5">
+                <img class="max-w-sm 1xl:max-w-[445px] 1xl:max-h-[580px]" src="public/img/desktop/project-5.jpeg" alt="project-5">
                 <p class="h-[66px] carousel-description">
                     <span class="text-white leading-[140%]">Тумба под телевизор</span>
                     <span><img src="public/img/mobile/arrow.svg" alt="arrow"></span>
